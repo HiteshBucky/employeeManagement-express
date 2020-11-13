@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./stylesheets/register.css
+  ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div>
+        <form method="POST" action="/register">
+            <h4 class="text-warning text-center pt-5">Registration</h4>
+            <!-- NAME -->
+            <label>
+                <input type="text" class="input" name="name" placeholder="ENTER NAME" required />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <!-- EMAIL -->
+            <label>
+                <input type="email" class="input" name="email" placeholder="ENTER EMAIL" required />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <!-- PASSWORD -->
+            <label>
+                <input type="password" class="input" name="password" placeholder="ENTER PASSWORD" required />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <!-- Employee Type -->
+            <label>
+                <select class="custom-select input" id="inputGroupSelect01" name="eType" required>
+                    <option value="" disabled selected>EMPLOYEE TYPE</option>
+                    <option value="Hourly">Hourly</option>
+                    <option value="Fixed">Fixed</option>
+                </select>
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <!-- Hourly Rate -->
+            <label>
+                <input type="number" class="input" name="hourlyRate" placeholder="ENTER HOURLY RATE" required/>
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <!-- Total Time -->
+            <label>
+                <input type="number" class="input" name="totalHour" placeholder="ENTER HOUR" required />
+                <div class="line-box">
+                    <div class="line"></div>
+                </div>
+            </label>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

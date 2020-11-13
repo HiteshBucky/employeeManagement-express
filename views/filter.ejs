@@ -1,0 +1,34 @@
+<div >	
+	<div class="container" style="display: flex; justify-content: space-between;">
+		<h2>Filter</h2>
+		<a href="/logout"><button class="btn btn-info">Logout</button></a>
+	</div>
+
+	<div class="jumbotron text-center " style="height: 22vh">	
+		<form action="/filter" method="post">
+		    <div class="form-row form-inline">
+		        <div class="col">
+		            <label for="name">By Name :
+		                <input type="text" class="form-control" id="name" placeholder="Enter Name" name="filtername" style="margin-left: 5%">
+		            </label>
+		        </div>
+		        <div class="col">
+		            <label for="email" for="pwd">By Email :
+		                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="filteremail" style="margin-left: 5%">
+		            </label>
+		        </div>
+		        <div class="col">
+		            <label for="email" for="eType">By Employee Type :
+		                <select class="custom-select input" id="eType" name="filtereType" style="margin-left: 5%; width: 55%">
+		                    <option selected value="Hourly">Hourly</option>
+		                    <option value="Fixed">Fixed</option>
+		                </select>
+		            </label>
+		        </div>
+		        <div class="col">	
+		        	<input type="submit" class="btn btn-lg btn-info" style="width: 50%"></input>
+		        </div>	
+		    </div>
+		</form>
+	</div>	
+</div>	
