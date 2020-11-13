@@ -56,7 +56,7 @@ router.get('/delete/:id', delteRowController)
 //Logout
 router.get('/logout', (req, res) =>{
 	localStorage.removeItem('myToken')
-	res.send("Logout Page")
+	res.render('register')
 })
 
 module.exports = router;
